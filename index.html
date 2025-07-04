@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🌤️ Premium Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="rainContainer"></div>
+<audio id="rainSound" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2023/03/24/audio_4c05f1d0c7.mp3?filename=rain-heavy-soft-ambient-145038.mp3" type="audio/mp3">
+</audio>
+<div id="snowContainer"></div>
+<div id="starsContainer"></div>
+
+
+<div class="container">
+    <h1>🌍 My Weather App</h1>
+    <div class="input-section">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button onclick="manualSearch()">Search</button>
+        <button onclick="toggleLanguage()">Switch to Hindi</button>
+    </div>
+
+    <div id="loader" class="hidden"></div>
+
+    <div id="weatherResult" class="card"></div>
+    <div id="forecast" class="card"></div>
+    <div id="aqiResult" class="card"></div>
+    <div id="activityResult" class="card"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
